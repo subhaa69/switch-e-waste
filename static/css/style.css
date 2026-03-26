@@ -1,0 +1,61 @@
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #4CAF50; /* Green */
+}
+
+h2 {
+    color: #2196F3; /* Blue */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark Mode Styles */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: #ffffff;
+    }
+    h1 {
+        color: #76FF03; /* Bright Green for Dark Mode */
+    }
+    h2 {
+        color: #00B0FF; /* Bright Blue for Dark Mode */
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+}
+
+/* Additional Mobile Styles */
+@media (max-width: 480px) {
+    .container {
+        padding: 5px;
+    }
+    h1 {
+        font-size: 1.3em;
+    }
+    h2 {
+        font-size: 1.1em;
+    }
+}
